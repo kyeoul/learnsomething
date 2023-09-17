@@ -9,3 +9,9 @@ PYBIND11_MODULE(PricingUtil, m) {
         .def("calcVal", &PricingUtil::calcVal)
         .def("getVal", &PricingUtil::getVal);
 }
+
+/*
+<%
+setup_pybind11(cfg)
+%>
+*/
