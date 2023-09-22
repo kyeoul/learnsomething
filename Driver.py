@@ -4,3 +4,11 @@ import PricingUtil
 
 if __name__ == "__main__":
     print("Nice work on creating the util! Make sure to check the unit tests!")
+
+    util = PricingUtil.PricingUtil()
+
+    print(util.getVal())
+
+    util.calcVal(4, 0.04, 3)
+
+    print(util.getVal())
