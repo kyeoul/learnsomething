@@ -14,9 +14,16 @@ public:
     void takeAction(float price);
     double getBalance();
     bool isHolding();
+    float getPercentageDiff(float a, float b);
 private:
     double balance;
     bool holding;
+
+    std::vector<float> recents;
+    int windows;
+    int cycles;
+    float origPrice;
+    Action action;
 };
 
 #endif //LEARNSOMETHING_HACKATHONBOT_H
