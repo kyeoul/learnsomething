@@ -15,6 +15,6 @@ def max_area(height):
         if(h1 < h2):
             ptr1 += 1
         else:
-            ptr2 += 1
+            ptr2 -= 1
 
     return max_area
