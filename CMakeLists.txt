@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
-project(PricingUtil LANGUAGES CXX)
+project(Primes LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -9,7 +9,7 @@ if (NOT CMAKE_BUILD_TYPE)
 endif ()
 
 if (CMAKE_BUILD_TYPE STREQUAL "Release")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3") #time to fly
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -march=native") #time to fly
 endif ()
 
 # Add Pybind11
@@ -31,11 +31,11 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE) #windows tings
 FetchContent_MakeAvailable(googletest)
 enable_testing()
 
-pybind11_add_module(PricingUtil MODULE src/main.cpp src/pricingutil.cpp)
+pybind11_add_module(Primes MODULE src/main.cpp src/primes.cpp)
 
 add_executable(
   PricingUtilTests
-  ${CMAKE_SOURCE_DIR}/src/pricingutil.cpp
+  ${CMAKE_SOURCE_DIR}/src/primes.cpp
   ${CMAKE_SOURCE_DIR}/tst/test_pricingutil.cpp
   )
 
