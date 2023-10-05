@@ -1,23 +1,15 @@
-# Part 1: Writing Novel Code, Introduction to PyBind
+# Part 4: Making things fasterer
 
 ## Scenario
-
-Thanks to your diligent work, on the last step, you have not been fired immediately. The company transfers you to train
-under a QR, who immediately sets you to work on building a pricing utility using C++ that he can directly import using
-Python. The Python script and pricing formula will be provided to help you with development.
-
-Pricing formula is as follows:
-Theoretical Value = (Previous Price * (0.9 + Interest Rate)) * Oleo Constant.You should take all 3 variables as input
-floats into your function.
-
-Note: You will need Python Development Headers installed!
+An intern has made a function to calculate all the unique prime factors for numbers in range of 2 through 1000 as part of their work. However, their code is extrememly slow and has been causing major slippage issues. You, after proving your knowledge through the previous steps are now tasked with optimizing their code.
 
 ## Instructions
+- [ ] OPTIONAL: Run the initial code to see the time.
+- [ ] Optimize the given code to run below .07 seconds for calculating the prime factorization of all numbers from 2-1000, including 2, excluding 1000.
+- [ ] PR this change. 
+- [ ] Write code that runs below .0001 seconds for calculating the prime factorization of all numbers from 2-1000, including 2, excluding 1000.
+- [ ] PR.
 
-- [ ] Read the given code, and attempt to understand it. Ensure Poetry is installed. 
-- [ ] Write unit tests FIRST!
-- [ ] You are given a working CMakeLists and Taskfile - you need to make the unit tests work and ensure the Python module is emitted correctly.
-- [ ] Ensure the provided Python file can import your module without any issues. This will require you to move the generated *.iso.
 
 ## Questions
 
@@ -29,7 +21,4 @@ General things:
 3. What bugs did you find while testing?
 
 This PR Specific:
-
-1. What challenges did you face while writing the module from scratch?
-2. How did you ensure your unit tests are comprehensive?
-3. Did you have enough guidance to complete the task?
+1. How does this make the code faster? How much headroom do you have?
