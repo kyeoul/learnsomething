@@ -2,4 +2,3 @@ build/
 .idea/
 .__DS_STORE__
 venv
-.vscode

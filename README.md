@@ -12,10 +12,8 @@ An intern has made a function to calculate all the unique prime factors for numb
 
 
 ## Questions
-
 Please include the following when you are writing your PR:   
-General things:
-
+General things:   
 1. What is the purpose of this PR?
 2. What changes did you make? Why?
 3. What bugs did you find while testing?
