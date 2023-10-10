@@ -1,0 +1,3 @@
+1. pip executes setup.py each time a package is installed.
+2. Malicious packages usually contain downloaders, creal stealers, hazard token grabbers, obfuscated python stealers, and info stealers.
+3. Malware authors take advantage of common misspellings such as "reaquests".
